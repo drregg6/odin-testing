@@ -1,15 +1,19 @@
 {
   "name": "odin-testing",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple testing projects from The Odin Project",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "watch": "jest --w *.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "testing",
+    "jest",
+    "theodinproject"
+  ],
+  "author": "Dave Regg <dave.r.regg@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "jest": "^26.1.0"
   }
