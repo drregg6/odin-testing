@@ -2,19 +2,21 @@ const calculator = (num1, num2, func='add') => {
   func = func.toLowerCase();
   switch(func) {
     case 'add':
-      return 4;
+      return num1 + num2;
       break;
     case 'subtract':
-      return 4;
+      return num1 - num2;
       break;
     case 'multiply':
-      return 4;
+      return num1 * num2;
       break;
     case 'divide':
-      return 4;
+      return num1 / num2;
       break;
+    case 'mod':
+      return num1 % num2;
     default:
-      throw new Error('Function must equal: "add", "subtract", "divide", or "multiply"');
+      return 'Function must equal: "add", "subtract", "divide", or "multiply"';
   }
 };
 
