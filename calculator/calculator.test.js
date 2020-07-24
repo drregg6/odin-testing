@@ -71,3 +71,27 @@ describe('subtracts two numbers', () => {
     expect(calculator(100, 14, 'subtract')).toBe(86);
   })
 });
+
+describe('multiply two numbers', () => {
+  it('should answer 3 * 10', () => {
+    expect(calculator(3, 10, 'multiply')).toBe(30);
+  });
+  it('should multiply two negative numbers', () => {
+    expect(calculator(-4, -11, 'multiply')).toBe(44);
+  });
+  it('should multiply one negative and one positive', () => {
+    expect(calculator(-4, 11, 'multiply')).toBe(-44);
+  });
+});
+
+describe('divide two numbers', () => {
+  it('should be able to divide 40 and 4', () => {
+    expect(calculator(40, 4, 'divide')).toBe(10);
+  });
+  it('should divide the second number from the first number', () => {
+    expect(calculator(4, 12, 'divide')).not.toBe(3);
+  });
+  it('should handle negative numbers', () => {
+    expect(calculator(90, -10, 'divide')).toBe(-9);
+  });
+});
