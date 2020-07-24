@@ -95,3 +95,12 @@ describe('divide two numbers', () => {
     expect(calculator(90, -10, 'divide')).toBe(-9);
   });
 });
+
+describe('should perform mod arithmatic', () => {
+  it('should be able to perform 10 % 5', () => {
+    expect(calculator(10, 5, 'mod')).toBe(0);
+  });
+  it('should be able to perform 12 % 5', () => {
+    expect(calculator(12, 5, 'mod')).toBe(2);
+  });
+});
